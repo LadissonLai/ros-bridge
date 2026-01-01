@@ -441,8 +441,8 @@ class HUD(object):
             'Vehicle: % 20s' % ' '.join(self.vehicle_info.type.title().split('.')[1:]),
             'Speed:   % 15.0f km/h' % (3.6 * self.vehicle_status.velocity),
             u'Heading:% 16.0f\N{DEGREE SIGN} % 2s' % (yaw, heading),
-            'Location:% 20s' % ('(% 6.2f, % 6.2f, % 6.2f, %6.2f)' % (x, y, z)),
-            'Yaw degrees:% 20s' % ('(% 6.2f\N{DEGREE SIGN})' % (regularized_yaw)),
+            'Location:% 20s' % ('(% 6.2f, % 6.2f, % 6.2f)' % (x, y, z)),
+            'Yaw degrees:% 16s' % ('(% 6.2f)' % (regularized_yaw)),
             'GNSS:% 24s' % ('(% 2.6f, % 3.6f)' % (self.latitude, self.longitude)),
             'Height:  % 18.0f m' % z, ''
         ]
