@@ -61,6 +61,10 @@
     <arg name='role_name' value='$(arg role_name)'/>
   </include>
 
+  <include file="$(find carla_ackermann_control)/launch/carla_ackermann_control.launch">
+    <arg name="role_name" value="ego_vehicle"/>
+  </include>
+
   <!-- Provide the robot description for the ego vehicle -->
   <param name="robot_description" textfile="$(find carla_ad_demo)/model/car_model/default.urdf" />
   <!-- <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher"/>
